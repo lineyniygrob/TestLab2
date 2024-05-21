@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_book_product" xml:lang="en-US">
+<title>BookProduct Class Reference</title>
+<indexterm><primary>BookProduct</primary></indexterm>
+<para>
+
+<para>Класс, представляющий книжный товар </para>
+ 
+</para>
+<para>Inheritance diagram for BookProduct:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_book_product.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_book_product_1ae0d0e6b8bb9964d03e34087febd8a904">BookProduct</link> (int <link linkend="_class_product_1a32e802ac149ad39a7a11acd4e804c407">id</link>, const string &amp;<link linkend="_class_product_1acc9bddcf74112d85a6dc231db2269b8d">name</link>, double <link linkend="_class_product_1abb2572df7a832a509944905603ba5e4f">price</link>, const string &amp;author)</para>
+
+<para>Создает новый экземпляр класса <link linkend="_class_book_product">BookProduct</link>. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_book_product_1ae4b821d0f036f5e34f1e673ac3f014c1">displayInfo</link> () const override</para>
+
+<para>Выводит информацию о книжном товаре </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_class_product">Product</link>        <itemizedlist>
+            <listitem><para><link linkend="_class_product_1a89d93cceb6469f8117f3e14385b67247">Product</link> (int <link linkend="_class_product_1a32e802ac149ad39a7a11acd4e804c407">id</link>, const string &amp;<link linkend="_class_product_1acc9bddcf74112d85a6dc231db2269b8d">name</link>, double <link linkend="_class_product_1abb2572df7a832a509944905603ba5e4f">price</link>)</para>
+
+<para>Создает новый экземпляр класса <link linkend="_class_product">Product</link>. </para>
+</listitem>
+            <listitem><para>string <link linkend="_class_product_1a4ec887b4436877ada9ea0db7c53efd17">getInfo</link> () const</para>
+
+<para>Возвращает информацию о товаре в виде строки </para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Protected Attributes inherited from <link linkend="_class_product">Product</link>        <itemizedlist>
+            <listitem><para>int <emphasis role="strong">id</emphasis></para>
+
+<para>Идентификатор товара </para>
+</listitem>
+            <listitem><para>string <emphasis role="strong">name</emphasis></para>
+
+<para>Название товара </para>
+</listitem>
+            <listitem><para>double <emphasis role="strong">price</emphasis></para>
+
+<para>Цена товара </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Класс, представляющий книжный товар </para>
+
+
+
+<para>Этот класс наследует класс <link linkend="_class_product">Product</link> и добавляет информацию об авторе книги. </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_book_product_1ae0d0e6b8bb9964d03e34087febd8a904"/><section>
+    <title>BookProduct()</title>
+<indexterm><primary>BookProduct</primary><secondary>BookProduct</secondary></indexterm>
+<indexterm><primary>BookProduct</primary><secondary>BookProduct</secondary></indexterm>
+<para><computeroutput>BookProduct::BookProduct (int id, const string &amp; name, double price, const string &amp; author)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Создает новый экземпляр класса <link linkend="_class_book_product">BookProduct</link>. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>id</entry><entry>
+<para>Идентификатор товара </para>
+</entry>
+                            </row>
+                            <row>
+<entry>name</entry><entry>
+<para>Название товара </para>
+</entry>
+                            </row>
+                            <row>
+<entry>price</entry><entry>
+<para>Цена товара </para>
+</entry>
+                            </row>
+                            <row>
+<entry>author</entry><entry>
+<para>Автор книги </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_book_product_1ae4b821d0f036f5e34f1e673ac3f014c1"/><section>
+    <title>displayInfo()</title>
+<indexterm><primary>displayInfo</primary><secondary>BookProduct</secondary></indexterm>
+<indexterm><primary>BookProduct</primary><secondary>displayInfo</secondary></indexterm>
+<para><computeroutput>void BookProduct::displayInfo ( ) const<computeroutput>[inline]</computeroutput>, <computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>Выводит информацию о книжном товаре </para>
+</para>
+<para>
+Reimplemented from <link linkend="_class_product_1a57561ab6f19b624afdd4d848307a2d35">Product</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+test3.cpp</section>
+</section>

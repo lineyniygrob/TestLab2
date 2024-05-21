@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_product" xml:lang="en-US">
+<title>Product Class Reference</title>
+<indexterm><primary>Product</primary></indexterm>
+<para>
+
+<para>Базовый класс, представляющий товар </para>
+ 
+</para>
+<para>Inheritance diagram for Product:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_product.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_product_1a89d93cceb6469f8117f3e14385b67247">Product</link> (int <link linkend="_class_product_1a32e802ac149ad39a7a11acd4e804c407">id</link>, const string &amp;<link linkend="_class_product_1acc9bddcf74112d85a6dc231db2269b8d">name</link>, double <link linkend="_class_product_1abb2572df7a832a509944905603ba5e4f">price</link>)</para>
+
+<para>Создает новый экземпляр класса <link linkend="_class_product">Product</link>. </para>
+</listitem>
+            <listitem><para>virtual void <link linkend="_class_product_1a57561ab6f19b624afdd4d848307a2d35">displayInfo</link> () const</para>
+
+<para>Выводит информацию о товаре </para>
+</listitem>
+            <listitem><para>string <link linkend="_class_product_1a4ec887b4436877ada9ea0db7c53efd17">getInfo</link> () const</para>
+
+<para>Возвращает информацию о товаре в виде строки </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_product_1a32e802ac149ad39a7a11acd4e804c407"/>int <emphasis role="strong">id</emphasis></para>
+
+<para>Идентификатор товара </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_product_1acc9bddcf74112d85a6dc231db2269b8d"/>string <emphasis role="strong">name</emphasis></para>
+
+<para>Название товара </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_product_1abb2572df7a832a509944905603ba5e4f"/>double <emphasis role="strong">price</emphasis></para>
+
+<para>Цена товара </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Базовый класс, представляющий товар </para>
+
+
+
+<para><itemizedlist>
+<listitem>
+<para>          <mediaobject>
+            <imageobject>
+                <imagedata align="center" valign="middle" scalefit="0" fileref="form_0.png"/>
+            </imageobject>
+        </mediaobject>
+ </para>
+</listitem></itemizedlist>
+</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_product_1a89d93cceb6469f8117f3e14385b67247"/><section>
+    <title>Product()</title>
+<indexterm><primary>Product</primary><secondary>Product</secondary></indexterm>
+<indexterm><primary>Product</primary><secondary>Product</secondary></indexterm>
+<para><computeroutput>Product::Product (int id, const string &amp; name, double price)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Создает новый экземпляр класса <link linkend="_class_product">Product</link>. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>id</entry><entry>
+<para>Идентификатор товара </para>
+</entry>
+                            </row>
+                            <row>
+<entry>name</entry><entry>
+<para>Название товара </para>
+</entry>
+                            </row>
+                            <row>
+<entry>price</entry><entry>
+<para>Цена товара </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_product_1a57561ab6f19b624afdd4d848307a2d35"/><section>
+    <title>displayInfo()</title>
+<indexterm><primary>displayInfo</primary><secondary>Product</secondary></indexterm>
+<indexterm><primary>Product</primary><secondary>displayInfo</secondary></indexterm>
+<para><computeroutput>virtual void Product::displayInfo ( ) const<computeroutput>[inline]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>Выводит информацию о товаре </para>
+</para>
+<para>
+Reimplemented in <link linkend="_class_electronic_product_1a9f92de670b0f8ecccd1d3f6f4696c3ba">ElectronicProduct</link>, and <link linkend="_class_book_product_1ae4b821d0f036f5e34f1e673ac3f014c1">BookProduct</link>.</para>
+</section>
+<anchor xml:id="_class_product_1a4ec887b4436877ada9ea0db7c53efd17"/><section>
+    <title>getInfo()</title>
+<indexterm><primary>getInfo</primary><secondary>Product</secondary></indexterm>
+<indexterm><primary>Product</primary><secondary>getInfo</secondary></indexterm>
+<para><computeroutput>string Product::getInfo ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Возвращает информацию о товаре в виде строки </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>Строка с информацией о товаре </para>
+</formalpara>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+test3.cpp</section>
+</section>

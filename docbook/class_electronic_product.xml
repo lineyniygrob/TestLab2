@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_electronic_product" xml:lang="en-US">
+<title>ElectronicProduct Class Reference</title>
+<indexterm><primary>ElectronicProduct</primary></indexterm>
+<para>
+
+<para>Класс, представляющий электронный товар </para>
+ 
+</para>
+<para>Inheritance diagram for ElectronicProduct:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_electronic_product.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_electronic_product_1a69507ac69042997aae2349d84b61b836">ElectronicProduct</link> (int <link linkend="_class_product_1a32e802ac149ad39a7a11acd4e804c407">id</link>, const string &amp;<link linkend="_class_product_1acc9bddcf74112d85a6dc231db2269b8d">name</link>, double <link linkend="_class_product_1abb2572df7a832a509944905603ba5e4f">price</link>, int warrantyPeriod)</para>
+
+<para>Создает новый экземпляр класса <link linkend="_class_electronic_product">ElectronicProduct</link>. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_electronic_product_1a9f92de670b0f8ecccd1d3f6f4696c3ba">displayInfo</link> () const override</para>
+
+<para>Выводит информацию об электронном товаре </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_class_product">Product</link>        <itemizedlist>
+            <listitem><para><link linkend="_class_product_1a89d93cceb6469f8117f3e14385b67247">Product</link> (int <link linkend="_class_product_1a32e802ac149ad39a7a11acd4e804c407">id</link>, const string &amp;<link linkend="_class_product_1acc9bddcf74112d85a6dc231db2269b8d">name</link>, double <link linkend="_class_product_1abb2572df7a832a509944905603ba5e4f">price</link>)</para>
+
+<para>Создает новый экземпляр класса <link linkend="_class_product">Product</link>. </para>
+</listitem>
+            <listitem><para>string <link linkend="_class_product_1a4ec887b4436877ada9ea0db7c53efd17">getInfo</link> () const</para>
+
+<para>Возвращает информацию о товаре в виде строки </para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Protected Attributes inherited from <link linkend="_class_product">Product</link>        <itemizedlist>
+            <listitem><para>int <emphasis role="strong">id</emphasis></para>
+
+<para>Идентификатор товара </para>
+</listitem>
+            <listitem><para>string <emphasis role="strong">name</emphasis></para>
+
+<para>Название товара </para>
+</listitem>
+            <listitem><para>double <emphasis role="strong">price</emphasis></para>
+
+<para>Цена товара </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Класс, представляющий электронный товар </para>
+
+
+
+<para>Этот класс наследует класс <link linkend="_class_product">Product</link> и добавляет информацию о гарантийном периоде. </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_electronic_product_1a69507ac69042997aae2349d84b61b836"/><section>
+    <title>ElectronicProduct()</title>
+<indexterm><primary>ElectronicProduct</primary><secondary>ElectronicProduct</secondary></indexterm>
+<indexterm><primary>ElectronicProduct</primary><secondary>ElectronicProduct</secondary></indexterm>
+<para><computeroutput>ElectronicProduct::ElectronicProduct (int id, const string &amp; name, double price, int warrantyPeriod)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Создает новый экземпляр класса <link linkend="_class_electronic_product">ElectronicProduct</link>. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>id</entry><entry>
+<para>Идентификатор товара </para>
+</entry>
+                            </row>
+                            <row>
+<entry>name</entry><entry>
+<para>Название товара </para>
+</entry>
+                            </row>
+                            <row>
+<entry>price</entry><entry>
+<para>Цена товара </para>
+</entry>
+                            </row>
+                            <row>
+<entry>warrantyPeriod</entry><entry>
+<para>Гарантийный срок товара (в месяцах) </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_electronic_product_1a9f92de670b0f8ecccd1d3f6f4696c3ba"/><section>
+    <title>displayInfo()</title>
+<indexterm><primary>displayInfo</primary><secondary>ElectronicProduct</secondary></indexterm>
+<indexterm><primary>ElectronicProduct</primary><secondary>displayInfo</secondary></indexterm>
+<para><computeroutput>void ElectronicProduct::displayInfo ( ) const<computeroutput>[inline]</computeroutput>, <computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>Выводит информацию об электронном товаре </para>
+</para>
+<para>
+Reimplemented from <link linkend="_class_product_1a57561ab6f19b624afdd4d848307a2d35">Product</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+test3.cpp</section>
+</section>
