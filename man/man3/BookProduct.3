@@ -1,0 +1,89 @@
+.TH "BookProduct" 3 "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+BookProduct \- Класс, представляющий книжный товар  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBProduct\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBookProduct\fP (int \fBid\fP, const string &\fBname\fP, double \fBprice\fP, const string &author)"
+.br
+.RI "Создает новый экземпляр класса \fBBookProduct\fP\&. "
+.ti -1c
+.RI "void \fBdisplayInfo\fP () const override"
+.br
+.RI "Выводит информацию о книжном товаре "
+.in -1c
+
+Public Member Functions inherited from \fBProduct\fP
+.in +1c
+.ti -1c
+.RI "\fBProduct\fP (int \fBid\fP, const string &\fBname\fP, double \fBprice\fP)"
+.br
+.RI "Создает новый экземпляр класса \fBProduct\fP\&. "
+.ti -1c
+.RI "string \fBgetInfo\fP () const"
+.br
+.RI "Возвращает информацию о товаре в виде строки "
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Attributes inherited from \fBProduct\fP
+.in +1c
+.ti -1c
+.RI "int \fBid\fP"
+.br
+.RI "Идентификатор товара "
+.ti -1c
+.RI "string \fBname\fP"
+.br
+.RI "Название товара "
+.ti -1c
+.RI "double \fBprice\fP"
+.br
+.RI "Цена товара "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Класс, представляющий книжный товар 
+
+Этот класс наследует класс \fBProduct\fP и добавляет информацию об авторе книги\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "BookProduct::BookProduct (int id, const string & name, double price, const string & author)\fR [inline]\fP"
+
+.PP
+Создает новый экземпляр класса \fBBookProduct\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP Идентификатор товара 
+.br
+\fIname\fP Название товара 
+.br
+\fIprice\fP Цена товара 
+.br
+\fIauthor\fP Автор книги 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void BookProduct::displayInfo () const\fR [inline]\fP, \fR [override]\fP, \fR [virtual]\fP"
+
+.PP
+Выводит информацию о книжном товаре 
+.PP
+Reimplemented from \fBProduct\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.
