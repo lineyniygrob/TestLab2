@@ -1,0 +1,88 @@
+\doxysection{Electronic\+Product Class Reference}
+\label{class_electronic_product}\index{ElectronicProduct@{ElectronicProduct}}
+
+
+Класс, представляющий электронный товар  
+
+
+Inheritance diagram for Electronic\+Product\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_electronic_product}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Electronic\+Product} (int \textbf{ id}, const string \&\textbf{ name}, double \textbf{ price}, int warranty\+Period)
+\begin{DoxyCompactList}\small\item\em Создает новый экземпляр класса \doxyref{Electronic\+Product}{p.}{class_electronic_product}. \end{DoxyCompactList}\item 
+void \textbf{ display\+Info} () const override
+\begin{DoxyCompactList}\small\item\em Выводит информацию об электронном товаре \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \textbf{ Product}}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Product} (int \textbf{ id}, const string \&\textbf{ name}, double \textbf{ price})
+\begin{DoxyCompactList}\small\item\em Создает новый экземпляр класса \doxyref{Product}{p.}{class_product}. \end{DoxyCompactList}\item 
+string \textbf{ get\+Info} () const
+\begin{DoxyCompactList}\small\item\em Возвращает информацию о товаре в виде строки \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \textbf{ Product}}
+\begin{DoxyCompactItemize}
+\item 
+int \textbf{ id}
+\begin{DoxyCompactList}\small\item\em Идентификатор товара \end{DoxyCompactList}\item 
+string \textbf{ name}
+\begin{DoxyCompactList}\small\item\em Название товара \end{DoxyCompactList}\item 
+double \textbf{ price}
+\begin{DoxyCompactList}\small\item\em Цена товара \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс, представляющий электронный товар 
+
+Этот класс наследует класс \doxyref{Product}{p.}{class_product} и добавляет информацию о гарантийном периоде. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\label{class_electronic_product_a69507ac69042997aae2349d84b61b836} 
+\index{ElectronicProduct@{ElectronicProduct}!ElectronicProduct@{ElectronicProduct}}
+\index{ElectronicProduct@{ElectronicProduct}!ElectronicProduct@{ElectronicProduct}}
+\doxysubsubsection{ElectronicProduct()}
+{\footnotesize\ttfamily Electronic\+Product\+::\+Electronic\+Product (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{const string \&}]{name,  }\item[{double}]{price,  }\item[{int}]{warranty\+Period }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Создает новый экземпляр класса \doxyref{Electronic\+Product}{p.}{class_electronic_product}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Идентификатор товара \\
+\hline
+{\em name} & Название товара \\
+\hline
+{\em price} & Цена товара \\
+\hline
+{\em warranty\+Period} & Гарантийный срок товара (в месяцах) \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\label{class_electronic_product_a9f92de670b0f8ecccd1d3f6f4696c3ba} 
+\index{ElectronicProduct@{ElectronicProduct}!displayInfo@{displayInfo}}
+\index{displayInfo@{displayInfo}!ElectronicProduct@{ElectronicProduct}}
+\doxysubsubsection{displayInfo()}
+{\footnotesize\ttfamily void Electronic\+Product\+::display\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Выводит информацию об электронном товаре 
+
+
+
+Reimplemented from \textbf{ Product} \doxyref{}{p.}{class_product_a57561ab6f19b624afdd4d848307a2d35}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ test3.\+cpp}\end{DoxyCompactItemize}

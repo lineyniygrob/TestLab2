@@ -1,0 +1,92 @@
+\doxysection{Book\+Product Class Reference}
+\label{class_book_product}\index{BookProduct@{BookProduct}}
+
+
+Класс, представляющий книжный товар  
+
+
+
+
+Inheritance diagram for Book\+Product\+:
+% FIG 0
+
+
+Collaboration diagram for Book\+Product\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Book\+Product} (int \textbf{ id}, const string \&\textbf{ name}, double \textbf{ price}, const string \&author)
+\begin{DoxyCompactList}\small\item\em Создает новый экземпляр класса \doxyref{Book\+Product}{p.}{class_book_product}. \end{DoxyCompactList}\item 
+void \textbf{ display\+Info} () const override
+\begin{DoxyCompactList}\small\item\em Выводит информацию о книжном товаре \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \textbf{ Product}}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Product} (int \textbf{ id}, const string \&\textbf{ name}, double \textbf{ price})
+\begin{DoxyCompactList}\small\item\em Создает новый экземпляр класса \doxyref{Product}{p.}{class_product}. \end{DoxyCompactList}\item 
+string \textbf{ get\+Info} () const
+\begin{DoxyCompactList}\small\item\em Возвращает информацию о товаре в виде строки \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \textbf{ Product}}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries id}
+\begin{DoxyCompactList}\small\item\em Идентификатор товара \end{DoxyCompactList}\item 
+string {\bfseries name}
+\begin{DoxyCompactList}\small\item\em Название товара \end{DoxyCompactList}\item 
+double {\bfseries price}
+\begin{DoxyCompactList}\small\item\em Цена товара \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс, представляющий книжный товар 
+
+Этот класс наследует класс \doxyref{Product}{p.}{class_product} и добавляет информацию об авторе книги. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\label{class_book_product_ae0d0e6b8bb9964d03e34087febd8a904} 
+\index{BookProduct@{BookProduct}!BookProduct@{BookProduct}}
+\index{BookProduct@{BookProduct}!BookProduct@{BookProduct}}
+\doxysubsubsection{BookProduct()}
+{\footnotesize\ttfamily Book\+Product\+::\+Book\+Product (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{const string \&}]{name,  }\item[{double}]{price,  }\item[{const string \&}]{author }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Создает новый экземпляр класса \doxyref{Book\+Product}{p.}{class_book_product}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Идентификатор товара \\
+\hline
+{\em name} & Название товара \\
+\hline
+{\em price} & Цена товара \\
+\hline
+{\em author} & Автор книги \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\label{class_book_product_ae4b821d0f036f5e34f1e673ac3f014c1} 
+\index{BookProduct@{BookProduct}!displayInfo@{displayInfo}}
+\index{displayInfo@{displayInfo}!BookProduct@{BookProduct}}
+\doxysubsubsection{displayInfo()}
+{\footnotesize\ttfamily void Book\+Product\+::display\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Выводит информацию о книжном товаре 
+
+
+
+Reimplemented from \textbf{ Product} \doxyref{}{p.}{class_product_a57561ab6f19b624afdd4d848307a2d35}.
+
+Here is the call graph for this function\+:
+% FIG 2
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+test3.\+cpp\end{DoxyCompactItemize}
