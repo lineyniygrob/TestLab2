@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_product" kind="class" language="C++" prot="public">
+    <compoundname>Product</compoundname>
+    <derivedcompoundref refid="class_book_product" prot="public" virt="non-virtual">BookProduct</derivedcompoundref>
+    <derivedcompoundref refid="class_electronic_product" prot="public" virt="non-virtual">ElectronicProduct</derivedcompoundref>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_product_1a32e802ac149ad39a7a11acd4e804c407" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Product::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>Product::id</qualifiedname>
+        <briefdescription>
+<para>Идентификатор товара </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test3.cpp" line="15" column="9" bodyfile="test3.cpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_product_1acc9bddcf74112d85a6dc231db2269b8d" prot="protected" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Product::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>Product::name</qualifiedname>
+        <briefdescription>
+<para>Название товара </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test3.cpp" line="16" column="12" bodyfile="test3.cpp" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_product_1a57561ab6f19b624afdd4d848307a2d35" compoundref="test3_8cpp" startline="32" endline="36">displayInfo</referencedby>
+        <referencedby refid="class_product_1a4ec887b4436877ada9ea0db7c53efd17" compoundref="test3_8cpp" startline="42" endline="44">getInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_product_1abb2572df7a832a509944905603ba5e4f" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Product::price</definition>
+        <argsstring></argsstring>
+        <name>price</name>
+        <qualifiedname>Product::price</qualifiedname>
+        <briefdescription>
+<para>Цена товара </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test3.cpp" line="17" column="12" bodyfile="test3.cpp" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_product_1a57561ab6f19b624afdd4d848307a2d35" compoundref="test3_8cpp" startline="32" endline="36">displayInfo</referencedby>
+        <referencedby refid="class_product_1a4ec887b4436877ada9ea0db7c53efd17" compoundref="test3_8cpp" startline="42" endline="44">getInfo</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_product_1a89d93cceb6469f8117f3e14385b67247" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Product::Product</definition>
+        <argsstring>(int id, const string &amp;name, double price)</argsstring>
+        <name>Product</name>
+        <qualifiedname>Product::Product</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>price</declname>
+        </param>
+        <briefdescription>
+<para>Создает новый экземпляр класса <ref refid="class_product" kindref="compound">Product</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Идентификатор товара </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Название товара </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>price</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Цена товара </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test3.cpp" line="26" column="5" bodyfile="test3.cpp" bodystart="26" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_product_1a57561ab6f19b624afdd4d848307a2d35" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Product::displayInfo</definition>
+        <argsstring>() const</argsstring>
+        <name>displayInfo</name>
+        <qualifiedname>Product::displayInfo</qualifiedname>
+        <reimplementedby refid="class_electronic_product_1a9f92de670b0f8ecccd1d3f6f4696c3ba">displayInfo</reimplementedby>
+        <reimplementedby refid="class_book_product_1ae4b821d0f036f5e34f1e673ac3f014c1">displayInfo</reimplementedby>
+        <briefdescription>
+<para>Выводит информацию о товаре </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test3.cpp" line="32" column="18" bodyfile="test3.cpp" bodystart="32" bodyend="36"/>
+        <references refid="class_product_1acc9bddcf74112d85a6dc231db2269b8d" compoundref="test3_8cpp" startline="16">name</references>
+        <references refid="class_product_1abb2572df7a832a509944905603ba5e4f" compoundref="test3_8cpp" startline="17">price</references>
+        <referencedby refid="class_electronic_product_1a9f92de670b0f8ecccd1d3f6f4696c3ba" compoundref="test3_8cpp" startline="69" endline="72">ElectronicProduct::displayInfo</referencedby>
+        <referencedby refid="class_book_product_1ae4b821d0f036f5e34f1e673ac3f014c1" compoundref="test3_8cpp" startline="97" endline="100">BookProduct::displayInfo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_product_1a4ec887b4436877ada9ea0db7c53efd17" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string Product::getInfo</definition>
+        <argsstring>() const</argsstring>
+        <name>getInfo</name>
+        <qualifiedname>Product::getInfo</qualifiedname>
+        <briefdescription>
+<para>Возвращает информацию о товаре в виде строки </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Строка с информацией о товаре </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test3.cpp" line="42" column="12" bodyfile="test3.cpp" bodystart="42" bodyend="44"/>
+        <references refid="class_product_1acc9bddcf74112d85a6dc231db2269b8d" compoundref="test3_8cpp" startline="16">name</references>
+        <references refid="class_product_1abb2572df7a832a509944905603ba5e4f" compoundref="test3_8cpp" startline="17">price</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Базовый класс, представляющий товар </para>
+    </briefdescription>
+    <detaileddescription>
+<para><itemizedlist>
+<listitem><para><image type="html" name="D:\test\test3\bes.bmp"></image>
+  <formula id="0">\[
+x_{1,2} = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+\]</formula> </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>BookProduct</label>
+        <link refid="class_book_product"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ElectronicProduct</label>
+        <link refid="class_electronic_product"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Product</label>
+        <link refid="class_product"/>
+      </node>
+    </inheritancegraph>
+    <location file="test3.cpp" line="13" column="1" bodyfile="test3.cpp" bodystart="13" bodyend="45"/>
+    <listofallmembers>
+      <member refid="class_product_1a57561ab6f19b624afdd4d848307a2d35" prot="public" virt="virtual"><scope>Product</scope><name>displayInfo</name></member>
+      <member refid="class_product_1a4ec887b4436877ada9ea0db7c53efd17" prot="public" virt="non-virtual"><scope>Product</scope><name>getInfo</name></member>
+      <member refid="class_product_1a32e802ac149ad39a7a11acd4e804c407" prot="protected" virt="non-virtual"><scope>Product</scope><name>id</name></member>
+      <member refid="class_product_1acc9bddcf74112d85a6dc231db2269b8d" prot="protected" virt="non-virtual"><scope>Product</scope><name>name</name></member>
+      <member refid="class_product_1abb2572df7a832a509944905603ba5e4f" prot="protected" virt="non-virtual"><scope>Product</scope><name>price</name></member>
+      <member refid="class_product_1a89d93cceb6469f8117f3e14385b67247" prot="public" virt="non-virtual"><scope>Product</scope><name>Product</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_electronic_product" kind="class" language="C++" prot="public">
+    <compoundname>ElectronicProduct</compoundname>
+    <basecompoundref refid="class_product" prot="public" virt="non-virtual">Product</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_electronic_product_1a4fd04a5396ec007734340ea25dbffa70" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ElectronicProduct::warrantyPeriod</definition>
+        <argsstring></argsstring>
+        <name>warrantyPeriod</name>
+        <qualifiedname>ElectronicProduct::warrantyPeriod</qualifiedname>
+        <briefdescription>
+<para>Гарантийный срок товара (в месяцах) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test3.cpp" line="53" column="9" bodyfile="test3.cpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_electronic_product_1a69507ac69042997aae2349d84b61b836" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ElectronicProduct::ElectronicProduct</definition>
+        <argsstring>(int id, const string &amp;name, double price, int warrantyPeriod)</argsstring>
+        <name>ElectronicProduct</name>
+        <qualifiedname>ElectronicProduct::ElectronicProduct</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>price</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>warrantyPeriod</declname>
+        </param>
+        <briefdescription>
+<para>Создает новый экземпляр класса <ref refid="class_electronic_product" kindref="compound">ElectronicProduct</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Идентификатор товара </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Название товара </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>price</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Цена товара </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>warrantyPeriod</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Гарантийный срок товара (в месяцах) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test3.cpp" line="63" column="5" bodyfile="test3.cpp" bodystart="63" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_electronic_product_1a9f92de670b0f8ecccd1d3f6f4696c3ba" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void ElectronicProduct::displayInfo</definition>
+        <argsstring>() const override</argsstring>
+        <name>displayInfo</name>
+        <qualifiedname>ElectronicProduct::displayInfo</qualifiedname>
+        <reimplements refid="class_product_1a57561ab6f19b624afdd4d848307a2d35">displayInfo</reimplements>
+        <briefdescription>
+<para>Выводит информацию об электронном товаре </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test3.cpp" line="69" column="10" bodyfile="test3.cpp" bodystart="69" bodyend="72"/>
+        <references refid="class_product_1a57561ab6f19b624afdd4d848307a2d35" compoundref="test3_8cpp" startline="32" endline="36">Product::displayInfo</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Класс, представляющий электронный товар </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Этот класс наследует класс <ref refid="class_product" kindref="compound">Product</ref> и добавляет информацию о гарантийном периоде. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ElectronicProduct</label>
+        <link refid="class_electronic_product"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Product</label>
+        <link refid="class_product"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>ElectronicProduct</label>
+        <link refid="class_electronic_product"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Product</label>
+        <link refid="class_product"/>
+      </node>
+    </collaborationgraph>
+    <location file="test3.cpp" line="51" column="1" bodyfile="test3.cpp" bodystart="51" bodyend="73"/>
+    <listofallmembers>
+      <member refid="class_electronic_product_1a9f92de670b0f8ecccd1d3f6f4696c3ba" prot="public" virt="virtual"><scope>ElectronicProduct</scope><name>displayInfo</name></member>
+      <member refid="class_electronic_product_1a69507ac69042997aae2349d84b61b836" prot="public" virt="non-virtual"><scope>ElectronicProduct</scope><name>ElectronicProduct</name></member>
+      <member refid="class_product_1a4ec887b4436877ada9ea0db7c53efd17" prot="public" virt="non-virtual"><scope>ElectronicProduct</scope><name>getInfo</name></member>
+      <member refid="class_product_1a32e802ac149ad39a7a11acd4e804c407" prot="protected" virt="non-virtual"><scope>ElectronicProduct</scope><name>id</name></member>
+      <member refid="class_product_1acc9bddcf74112d85a6dc231db2269b8d" prot="protected" virt="non-virtual"><scope>ElectronicProduct</scope><name>name</name></member>
+      <member refid="class_product_1abb2572df7a832a509944905603ba5e4f" prot="protected" virt="non-virtual"><scope>ElectronicProduct</scope><name>price</name></member>
+      <member refid="class_product_1a89d93cceb6469f8117f3e14385b67247" prot="public" virt="non-virtual"><scope>ElectronicProduct</scope><name>Product</name></member>
+      <member refid="class_electronic_product_1a4fd04a5396ec007734340ea25dbffa70" prot="private" virt="non-virtual"><scope>ElectronicProduct</scope><name>warrantyPeriod</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

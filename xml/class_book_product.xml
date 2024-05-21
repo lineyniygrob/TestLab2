@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_book_product" kind="class" language="C++" prot="public">
+    <compoundname>BookProduct</compoundname>
+    <basecompoundref refid="class_product" prot="public" virt="non-virtual">Product</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_book_product_1a316fe66ef2a57b1cc16694a0911085cf" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string BookProduct::author</definition>
+        <argsstring></argsstring>
+        <name>author</name>
+        <qualifiedname>BookProduct::author</qualifiedname>
+        <briefdescription>
+<para>Автор книги </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test3.cpp" line="81" column="12" bodyfile="test3.cpp" bodystart="81" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_book_product_1ae0d0e6b8bb9964d03e34087febd8a904" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BookProduct::BookProduct</definition>
+        <argsstring>(int id, const string &amp;name, double price, const string &amp;author)</argsstring>
+        <name>BookProduct</name>
+        <qualifiedname>BookProduct::BookProduct</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>price</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>author</declname>
+        </param>
+        <briefdescription>
+<para>Создает новый экземпляр класса <ref refid="class_book_product" kindref="compound">BookProduct</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Идентификатор товара </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Название товара </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>price</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Цена товара </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>author</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Автор книги </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test3.cpp" line="91" column="5" bodyfile="test3.cpp" bodystart="91" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="class_book_product_1ae4b821d0f036f5e34f1e673ac3f014c1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void BookProduct::displayInfo</definition>
+        <argsstring>() const override</argsstring>
+        <name>displayInfo</name>
+        <qualifiedname>BookProduct::displayInfo</qualifiedname>
+        <reimplements refid="class_product_1a57561ab6f19b624afdd4d848307a2d35">displayInfo</reimplements>
+        <briefdescription>
+<para>Выводит информацию о книжном товаре </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test3.cpp" line="97" column="10" bodyfile="test3.cpp" bodystart="97" bodyend="100"/>
+        <references refid="class_product_1a57561ab6f19b624afdd4d848307a2d35" compoundref="test3_8cpp" startline="32" endline="36">Product::displayInfo</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Класс, представляющий книжный товар </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Этот класс наследует класс <ref refid="class_product" kindref="compound">Product</ref> и добавляет информацию об авторе книги. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>BookProduct</label>
+        <link refid="class_book_product"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Product</label>
+        <link refid="class_product"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>BookProduct</label>
+        <link refid="class_book_product"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Product</label>
+        <link refid="class_product"/>
+      </node>
+    </collaborationgraph>
+    <location file="test3.cpp" line="79" column="1" bodyfile="test3.cpp" bodystart="79" bodyend="101"/>
+    <listofallmembers>
+      <member refid="class_book_product_1a316fe66ef2a57b1cc16694a0911085cf" prot="private" virt="non-virtual"><scope>BookProduct</scope><name>author</name></member>
+      <member refid="class_book_product_1ae0d0e6b8bb9964d03e34087febd8a904" prot="public" virt="non-virtual"><scope>BookProduct</scope><name>BookProduct</name></member>
+      <member refid="class_book_product_1ae4b821d0f036f5e34f1e673ac3f014c1" prot="public" virt="virtual"><scope>BookProduct</scope><name>displayInfo</name></member>
+      <member refid="class_product_1a4ec887b4436877ada9ea0db7c53efd17" prot="public" virt="non-virtual"><scope>BookProduct</scope><name>getInfo</name></member>
+      <member refid="class_product_1a32e802ac149ad39a7a11acd4e804c407" prot="protected" virt="non-virtual"><scope>BookProduct</scope><name>id</name></member>
+      <member refid="class_product_1acc9bddcf74112d85a6dc231db2269b8d" prot="protected" virt="non-virtual"><scope>BookProduct</scope><name>name</name></member>
+      <member refid="class_product_1abb2572df7a832a509944905603ba5e4f" prot="protected" virt="non-virtual"><scope>BookProduct</scope><name>price</name></member>
+      <member refid="class_product_1a89d93cceb6469f8117f3e14385b67247" prot="public" virt="non-virtual"><scope>BookProduct</scope><name>Product</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
